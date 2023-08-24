@@ -1,0 +1,31 @@
+{
+  "name": "jarvis",
+  "version": "0.0.1",
+  "dependencies": {
+    "@discordjs/brokers": "^0.2.2",
+    "@discordjs/builders": "^1.6.5",
+    "@discordjs/collection": "^1.5.3",
+    "@discordjs/core": "^1.0.1",
+    "@discordjs/formatters": "^0.3.2",
+    "@discordjs/proxy": "^2.0.1",
+    "@discordjs/rest": "^2.0.1",
+    "@discordjs/util": "^1.0.1",
+    "@discordjs/voice": "^0.16.0",
+    "@discordjs/ws": "^1.0.1",
+    "discord.js": "^14.13.0",
+    "node": "^20.5.1",
+    "npm": "^9.8.1"
+  },
+  "main": "src/Jarvis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jarvis": "nodemon src/Jarvis.js --delay 3"
+  },
+  "keywords": [],
+  "author": "N0cly",
+  "license": "ISC",
+  "description": "Bot discord JS Jarvis",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
