@@ -21,6 +21,6 @@ module.exports ={
             url: 'https://youtu.be/2p_AxoaHeRw',
         })
 
-        client.user.setStatus("dnd");
+        client.user.setStatus("online");
     }
 }

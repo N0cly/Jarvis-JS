@@ -10,7 +10,7 @@ module.exports = {
                 {name:'Online', value:`online`},
                 {name: 'Do Not Disturb', value: `dnd`},
                 {name:'Idle', value:`idle`},
-                {name:'Offline', value:`invisible`}).setRequired(true)),
+                {name:'Offline', value:`offline`}).setRequired(true)),
     async execute(interaction, client) {
 
         const status = interaction.options.getString('status');

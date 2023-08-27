@@ -7,5 +7,10 @@ module.exports = {
         .setDescription('Replies with Pong!'),
     async execute(interaction, client) {
         await interaction.reply(`Pong! : \`${client.ws.ping}\``);
+
+        const sent = await interaction.reply({ content: 'Pinging...', fetchReply: true });
+
+
+        await interaction.editReply(`Pong!\n> **Websocket heartbeat:** \`${client.ws.ping} ms\` \n> **Roundtrip latency:** \`${sent.createdTimestamp - interaction.createdTimestamp} ms\``);
     },
 };
