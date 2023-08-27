@@ -28,6 +28,8 @@ module.exports = {
             }
         } else {
             await channel.send(message);
+            await interaction.reply({content: "Message send", ephemeral: true});
+
         }
     },
 };

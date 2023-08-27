@@ -19,7 +19,7 @@
   "main": "src/Jarvis.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jarvis": "nodemon src/Jarvis.js --delay 3"
+    "jarvis": "nodemon src/Jarvis.js"
   },
   "keywords": [],
   "author": "N0cly",

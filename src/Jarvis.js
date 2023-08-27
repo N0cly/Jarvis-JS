@@ -1,14 +1,25 @@
 // Require the necessary discord.js classes
-const { Client, Events, GatewayIntentBits} = require('discord.js');
+const { Client, Events, GatewayIntentBits , ActivityType} = require('discord.js');
 const { token } = require('./config.json');
 const fs = require('node:fs');
 const path = require('node:path');
 const {Collection} = require("@discordjs/collection");
 
+
 // Create a new client instance
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMembers,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildPresences] });
+
+//client.user.setActivity('SUNLIGHTS', {type: ActivityType.Listening });
+//client.user.setStatus('dnd');
+
 
 client.commands = new Collection();
+
 
 const foldersPath  = path.join(__dirname, 'Commands');
 const commandFolders = fs.readdirSync(foldersPath);
@@ -61,7 +72,9 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
         }
     }
-    console.log(interaction);
+
+
+    //console.log(client);
 });
 
 // Log in to Discord with your client's token
