@@ -4,11 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba0816ee-21ef-4d15-bce5-e56f13ab0f5d" name="Changes" comment="command status and activities for the bot (only by me )">
+    <list default="true" id="ba0816ee-21ef-4d15-bce5-e56f13ab0f5d" name="Changes" comment="command ping updated">
+      <change afterPath="$PROJECT_DIR$/src/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Dev/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Music/info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Music/pause.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Music/play.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Music/queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Music/quit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Music/resume.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Music/shuffle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Music/skip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Music/skipto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Template/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Template/button+.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Data/role.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Dev/status.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Dev/status.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Utils/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Utils/ping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Events/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Dev/activitie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Dev/activities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Utils/Embed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Template/Embed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/InteractionCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/InteractionCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Jarvis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jarvis.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package.json" />
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
+        <option value="package.json" />
         <option value="command" />
       </list>
     </option>
@@ -30,6 +46,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -42,34 +61,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Ninja/Documents/01.Programme/Java/Jarvis-JS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ninja/Documents/01.Programme/Java/Jarvis-JS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ninja\Documents\01.Programme\Java\Jarvis-JS\src\Commands\Template" />
       <recent name="C:\Users\Ninja\Documents\01.Programme\Java\Jarvis-JS\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Jarvis.js">
+  <component name="RunManager" selected="Node.js.deploy-command-guild.js">
     <configuration name="Jarvis.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/Jarvis.js" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
@@ -113,7 +133,12 @@
       <workItem from="1692989805118" duration="1061000" />
       <workItem from="1692991381133" duration="55000" />
       <workItem from="1693077033878" duration="134000" />
-      <workItem from="1693080808420" duration="9231000" />
+      <workItem from="1693080808420" duration="9356000" />
+      <workItem from="1693133805573" duration="87000" />
+      <workItem from="1693133902618" duration="4895000" />
+      <workItem from="1693149338327" duration="4643000" />
+      <workItem from="1693737011123" duration="717000" />
+      <workItem from="1693737756159" duration="8185000" />
     </task>
     <task id="LOCAL-00001" summary="init JS">
       <created>1692874814439</created>
@@ -137,7 +162,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693097068727</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="command ping updated">
+      <option name="closed" value="true" />
+      <created>1693097944583</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693097944583</updated>
+    </task>
+    <task id="LOCAL-00005" summary="command ping updated">
+      <option name="closed" value="true" />
+      <created>1693097968570</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693097968570</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +198,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init JS" />
     <MESSAGE value="command status and activities for the bot (only by me )" />
-    <option name="LAST_COMMIT_MESSAGE" value="command status and activities for the bot (only by me )" />
+    <MESSAGE value="command ping updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="command ping updated" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

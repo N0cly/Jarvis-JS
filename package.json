@@ -12,7 +12,9 @@
     "@discordjs/util": "^1.0.1",
     "@discordjs/voice": "^0.16.0",
     "@discordjs/ws": "^1.0.1",
+    "discord-player": "^6.6.2",
     "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
     "node": "^20.5.1",
     "npm": "^9.8.1"
   },

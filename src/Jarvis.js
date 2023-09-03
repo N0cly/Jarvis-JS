@@ -1,24 +1,33 @@
 // Require the necessary discord.js classes
 const { Client, Events, GatewayIntentBits , ActivityType} = require('discord.js');
+const dotenv = require("dotenv");
 const { token } = require('./config.json');
 const fs = require('node:fs');
 const path = require('node:path');
 const {Collection} = require("@discordjs/collection");
+const {Player} = require("discord-player")
 
 
-// Create a new client instance
+dotenv.config();
+
+
 const client = new Client({ intents: [
-    GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMembers,
-    GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent,
-    GatewayIntentBits.GuildPresences] });
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildPresences] });
 
-//client.user.setActivity('SUNLIGHTS', {type: ActivityType.Listening });
-//client.user.setStatus('dnd');
 
 
 client.commands = new Collection();
+
+client.player = new Player(client, {
+    ytdlOptions: {
+        quality: "highestaudio",
+        highWaterMark: 1<<25
+    }
+})
 
 
 const foldersPath  = path.join(__dirname, 'Commands');
@@ -39,7 +48,7 @@ for (const folder of commandFolders) {
     }
 }
 
-const eventsPath = path.join(__dirname, 'events');
+const eventsPath = path.join(__dirname, 'Events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
 
 for (const file of eventFiles) {
@@ -73,9 +82,38 @@ client.on(Events.InteractionCreate, async interaction => {
         }
     }
 
+    // try{
+    //     if (!interaction.isButton()) return;
+    //     await interaction.deferReply({ ephemeral: true});
+    //
+    //     const role = interaction.guild.roles.cache.get(interaction.customId);
+    //
+    //     if (!role){
+    //         interaction.editReply({
+    //             content: "I couldn't find that role"
+    //         })
+    //         return;
+    //     }
+    //
+    //     const hasRole = interaction.member.roles.cache.has(role.id);
+    //
+    //     if (hasRole){
+    //         await interaction.member.roles.remove(role);
+    //         await interaction.editReply(`The role ${role} has been removed.`);
+    //         return;
+    //     }
+    //
+    //     await interaction.member.roles.add(role);
+    //     await interaction.editReply(`The role ${role} has been added.`);
+    // } catch (e) {
+    //     console.log(e);
+    // }
+
+
+
 
     //console.log(client);
 });
 
 // Log in to Discord with your client's token
-client.login(token);
+client.login(process.env.TOKEN);
